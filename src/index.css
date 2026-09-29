@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Parliament';
+  src: local('Parliament'), local('Parliament-Regular'), local('Parliament Regular'), local('Parliament Slab'), local('Metropolitan Parliament'), local('Northern Parliament');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Parliament';
+  src: local('Parliament Italic'), local('Parliament-Italic');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Parliament', 'Parliament-Regular', 'Cinzel', 'Cormorant Garamond', 'Baskervville', 'EB Garamond', 'Playfair Display', Georgia, serif;
+  --font-serif: 'Parliament', 'Parliament-Regular', 'Cinzel', 'Cormorant Garamond', 'Baskervville', 'EB Garamond', 'Playfair Display', Georgia, serif;
+  --font-display: 'Parliament', 'Parliament-Regular', 'Cinzel', 'Cormorant Garamond', 'Baskervville', 'EB Garamond', 'Playfair Display', Georgia, serif;
+  --font-mono: 'Parliament', 'Parliament-Regular', 'Cinzel', monospace;
+
+  /* Reference beige color palette based on uploaded linen texture */
+  --color-cream-canvas: #f3eee5;
+  --color-cream-surface: #faf7f2;
+  --color-cream-card: #fcfaf6;
+  --color-cream-50: #faf7f1;
+  --color-cream-100: #f6f0e6;
+  --color-cream-200: #eee6d8;
+  --color-cream-300: #e3d9c7;
+  --color-cream-400: #d5c7b1;
+  --color-cream-500: #bfae95;
+  --color-cream-muted: #eae3d4;
+  --color-cream-border: #ded4c3;
+}
+
+:root {
+  font-family: 'Parliament', 'Parliament-Regular', 'Cinzel', 'Cormorant Garamond', 'Baskervville', 'EB Garamond', 'Playfair Display', Georgia, serif;
+}
+
+/* Apply Parliament font to all elements across the entire interface */
+*, *::before, *::after {
+  font-family: 'Parliament', 'Parliament-Regular', 'Cinzel', 'Cormorant Garamond', 'Baskervville', 'EB Garamond', 'Playfair Display', Georgia, serif;
+}
+
+body {
+  background-color: #f3eee5;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.5) 0%, rgba(243, 238, 229, 0.2) 75%),
+    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(160, 140, 110, 0.035) 3px, rgba(160, 140, 110, 0.035) 6px),
+    repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(160, 140, 110, 0.035) 3px, rgba(160, 140, 110, 0.035) 6px);
+  background-attachment: fixed;
+  color: #2b251e;
+}
+
+.bg-cream-canvas {
+  background-color: #f3eee5;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.5) 0%, rgba(243, 238, 229, 0.2) 75%),
+    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(160, 140, 110, 0.035) 3px, rgba(160, 140, 110, 0.035) 6px),
+    repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(160, 140, 110, 0.035) 3px, rgba(160, 140, 110, 0.035) 6px);
+}
+
+.dark body,
+.dark,
+.dark .bg-cream-canvas {
+  background-image: none;
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Study Session Tracker",
+  "description": "Track study sessions, calculate weekly subject time, sync with Google Classroom, play 100+ ambient focus sounds, maintain streaks, and receive deadline notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
